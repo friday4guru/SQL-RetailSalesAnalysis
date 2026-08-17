@@ -73,3 +73,12 @@ WHERE category = 'Clothing'
 AND	  quantiy >=4
 AND  FORMAT(sale_date, 'yyyy-MM') = '2022-12'
 ```
+
+-- 10. Write a SQL query to calculate the total sales (total_sale) for each category.
+```sql
+SELECT
+category,
+SUM(total_sale) TotalSalesByCategory
+FROM RetailSalesAnalysis
+GROUP BY category
+```
