@@ -66,7 +66,7 @@ FROM RetailSalesAnalysis
 WHERE sale_date = '2022-11-05'
 ```
 ### 9. retrieve all transactions where the category is 'Clothing' and the quantity sold is at least 4 in the month of Nov-2022.
-````sql
+```sql
 SELECT*
 FROM RetailSalesAnalysis
 WHERE category = 'Clothing'
